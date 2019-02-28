@@ -4,7 +4,7 @@ module.exports = function getZerosCount(number, base) {
         var  primesOfFactors = [];
         var baseFactor = [];
         nextPrime:
-        for(var i = 2; i<base; i++){
+        for(var i = 2; i<=base; i++){
             for(var j = 2; j<i; j++){
                 if(i%j==0) continue nextPrime
             }
